@@ -1,21 +1,51 @@
 # DistanceFYI Embed Widget
 
-> Embeddable DistanceFYI widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> Haversine distance, travel times. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/distancefyi-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/distancefyi-embed@1/dist/embed.min.js"></script>
+<div data-distancefyi="distance-calc" data-slug="example"></div>
+```
+
+## Available Widget Types (7)
+
+- entity: `data-distancefyi="entity"`
+- glossary: `data-distancefyi="glossary"`
+- guide: `data-distancefyi="guide"`
+- compare: `data-distancefyi="compare"`
+- search: `data-distancefyi="search"`
+- faq: `data-distancefyi="faq"`
+- distance-calc (interactive): `data-distancefyi="distance-calc"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-distancefyi="distance-calc" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/distancefyi-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://distancefyi.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://distancefyi.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://distancefyi.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://distancefyi.com
 - Widget docs: https://widget.distancefyi.com
-- npm: https://www.npmjs.com/package/distancefyi-embed
+- API documentation: https://distancefyi.com/developers/
+- npm package: https://www.npmjs.com/package/distancefyi-embed
 - GitHub: https://github.com/fyipedia/distancefyi-embed
-- API: https://distancefyi.com/developers/
 
-## Geo FYI Widget Family
+## Geo FYI Widget Network
 
 - [MountainFYI Widget](https://widget.mountainfyi.com)
 - [QuakeFYI Widget](https://widget.quakefyi.com)
