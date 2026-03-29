@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# DistanceFYI Embed Widget
+# Main site: https://distancefyi.com
+# Widget docs: https://widget.distancefyi.com
+# npm: https://www.npmjs.com/package/distancefyi-embed
